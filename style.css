@@ -2,46 +2,84 @@
 *{
     margin: 0px;
     padding: 0px;
-   }
-   #wrapper{
-    width: 950px;
-    background-color: silver;
-    margin: 0px auto;
-    padding: 10px 0px 10px 0px;
-   }
-   #header{
-    min-height: 150px;
-    margin: 20px 20px 20px 20px;
-    display: block;
+    outline: 1px red solid;
+    }
+
+.wrapper{
+}
+
+.header{
+    color: green;
     background-color: green;
-   }
-   #navigation{
-    min-height: 230px;
-    vertical-align: top;
-    display: inline-block;
-    width: 200px;
-    padding: 40px 0px 0px 0px;
-    margin: 0px 20px 20px 20px;
+    padding: 100px 0px;
+    margin: 10px;
+}
+
+.navigation{
+    color: blue;
+    padding: 300px 0px;
     background-color: blue;
-   }
-   #main_content{
-    min-height: 300px;
     display: inline-block;
-    width: 675px;
-    padding: 0px 0px 40px 10px;
+
+}
+
+.main_content{
     background-color: red;
-   }
-   .subcontents{
-    min-height: 200px;
+    color: red;
+    padding: 400px 0px;
     display: inline-block;
-    width: 200px;
-    margin: 10px 5px 10px 5px;
+    vertical-align: top;
+}
+
+.subcontents{
+
     background-color: yellow;
-   }
-   #advertisement{
-    min-height: 100px;
-    display: inline-block;
-    width: 630px;
+}
+
+#advertisement{
+
     background-color: purple;
-    margin: 10px 5px;
-   }
+    
+}
+
+@media only screen and (max-width: 480px){
+    .sm-0{
+        display: none;
+    }
+    
+    .sm-1{
+        width: 25%;
+    }
+
+    .sm-4{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+    .med-0{
+        display: none;
+    }
+    
+    .med-2{
+        width: 50%;
+    }
+
+    .med-4{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .lrg-1 p{
+        width: 25%;
+    }
+
+    .lrg-3{
+        width: 75%;
+    }
+
+    .lrg-4{
+        width: 100%;
+    }
+}
